@@ -230,14 +230,6 @@ function wpvr_block_render($attributes)
             $foundid = '';
             $muted = '&mute=1';
 
-            // if ($autoplay == 'on') {
-            //     $autoplay = '&autoplay=1';
-            //     $muted = '&mute=1';
-            // } else {
-            //     $autoplay = '';
-            //     $muted = '';
-            // }
-
             if ($loop == 'on') {
                 $loop = '&loop=1';
             } else {
