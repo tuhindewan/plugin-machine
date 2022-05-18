@@ -1,0 +1,28 @@
+name: "Plugin Machine WordPress Plugin Builder"
+description: "Build installable ZIP files for your WordPress Plugin"
+author: "Josh Pollock"
+branding:
+  icon: "arrow-up-circle"
+  color: "blue"
+inputs:
+  PLUGIN_MACHINE_TOKEN:
+    description: "Plugin Machine Token"
+    required: true
+  GITHUB_TOKEN:
+    description: "GitHub token"
+    required: true
+  PLUGIN_DIR:
+    description: Directory with plugin
+    required: false
+  COMMENT_PR:
+    description: If a link to ZIP should be added to PR
+    required: false
+icon: arrow-up-circle
+
+outputs:
+  upload:
+    description: Upload details
+
+runs:
+  using: "node16"
+  main: "dist/index.js"
