@@ -485,7 +485,6 @@ function wpvr_block_render($attributes)
                 $scene_max_yaw = (float)$panoscenes["scene-maxyaw"];
             }
 
-
             $scene_min_yaw = '';
             if (isset($panoscenes["scene-minyaw"])) {
                 $scene_min_yaw = (float)$panoscenes["scene-minyaw"];
